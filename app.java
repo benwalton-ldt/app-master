@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Practice 2
 Adjustment wit Ada
 Working with Pierre
@@ -14,3 +15,7 @@ read name
 echo "Thanks $name for being a champion"
 echo "You are very valuable"
 echo "From today `date` you will be a success"
+=======
+Outsource with us and accelerate your digital transformation
+This is the second editting being done on this app
+>>>>>>> fd926e92f86df8e87cea7d84881a9b3a8f30929d
