@@ -1,0 +1,323 @@
+VCS:
+  - Local
+  - Centralised
+  - Distributed
+
+Landmark Technologies / ebay - application
+                       - requirements
+
+Developers - 6 - colaborate
+      - write code -  database/ login/sales
+GIT:
+  - Git thinks of data as snapshots.
+  - It takes a picture of what all your files look like at that moment and stores 
+    a reference to that snapshot.
+  Benefits: Nearly every operation is local
+            git has intergrity
+            Git generally only adds data
+3 states:
+  3 main states to a file - committed
+                          - modified
+                          - staged
+
+  working directory       staging area        git repo
+
+
+  https://git-scm.com/downloads
+
+
+  **$ git config --global user.name "John Smith"**
+  **$ git config --global user.email "jsmith@gmail.com"**
+
+  git config --global --list
+
+
+mkdir ebay/
+git init
+touch login.txt / vi login.txt / echo "info" >> login.txt
+- add content to the file
+
+git init          = to initialised a git empty repository / git Local-Repo = .git
+
+git status        = to track files location
+
+git add           = move files to staging area from working area
+git add login.txt   => moving login.txt to staging area
+git add .    =    add all files in the pwd to the staging area
+git add *    = add all files
+
+
+git commit -m     = move files to the local repository FROM STAGING AREA  = .git
+                    good commit message for tracking changes/authors 
+
+git log = displays commit iD 
+
+git config --global --list
+
+git init          = to initialised a git empty repository
+git status        = to track files location
+git add           = move files to staging area from working area
+git commit -m     = move files to the local repository FROM STAGING AREA
+                    good commit message for tracking changes/authors 
+git log = displays commit iD 
+
+areas in git:
+  working area = WIP  
+    files are in "red"
+    git add 
+  staging area 
+    files are in "green"
+    git commit -m ""
+  Local-Repo = .git
+    git push  --> move changes to remote from Local-Repo 
+  Remote-Repo = github
+
+  git pull = moving file from remote repository to working area
+
+====================================================================
+Landmark-Software Solution(LSS)   Boa/RBC/BB/PAYPAL/ZELLE(FinTech)
+==================                ===============================
+ZELLE - USA:
+interac - Canada 
+momo   - Cameroon 
+
+  implementation -- coding / programming 
+app.java:  3000 lines   
+zelle: 
+  v1
+       echo "Please enter your name"
+       read name
+       echo "Please enter your password"
+       read -s password  
+       echo "Welcome to the zelle application"
+       -------
+  v2  is amended version 1 
+       echo "Please enter your username"
+       read username
+       echo "Please enter your password"
+       read -s password  
+       echo "Welcome to the zelle application"
+
+locally 
+
+
+deployed to productions
+SOFTWARE Development is dynamic and changes based:
+   1. Clients requirements 
+   2. Customers aspirations / satisfaction 
+   3. Customers expectation --->  
+          $400 / $500  / $700 
+
+  payment application 
+
+ boa == 
+  online-banking 
+
+ apple --> smart Phones / IOS 
+ samsung --smart Phones / android
+
+  Samsung Note --> 1  2  3  4  5  6  7  8  9  10  20 
+  Samsung      --> 1  2  3  4  5  6  7  8  9  10  20 21 22
+
+  Git is use for Versioning 
+
+
+SDLC =   ZELLE:         LSS:
+ Requirements -->  
+ Designing --> High Level Documentation 
+ Implementation --> Developers start coding 
+ Testing -->
+ Deployment -->
+ Maintenance-- Monitoring 
+
+ Year 3 = 
+ Release to the client (RBC/BOA/BC) 
+Versions:
+  version 1 
+
+AWS  ==== 
+Git: Versioning Software (95% plus companies) 
+  --> Distributed Version Control system. DVCS
+  Open source
+  Support Data integrity
+  support ROLL-BACK 
+  Fast 
+  Collaboration is great 
+
+SVN --> Sub Version
+CVS --> Concurrent Version system
+TFS --> Team Foundation Server
+
+GitHub:
+Source Code Management Platforms = SCM
+        GitHub - MS
+        GitLab - 
+        BitBucket (Stash) - A
+        Amazon CodeCommit
+
+https://github.com
+
+84% of Fortune  100
+  email address 
+  password 
+
+IQ: As a DevOps Engineer, what are your roles & responsilities in Git?
+    DevOps Engineers git related roles are:
+    Project Onboarding
+       rbc / interac 
+       boa / zelle 
+    1. Create organisation when necessary 
+           https://github.com/lss-zelle
+
+    2. Create teams and add members and assign roles & responsilities
+          https://github.com/orgs/lss-zelle/teams/zelle-team
+           managers 
+
+       add users to team and grant required access
+
+    3. Create repository for each project and share them with developers    
+          https://github.com/lss-zelle/zelle.git
+    
+  4. We create an enabling and secured environment for developers to code.
+
+       private repos:  
+         no one has read or write access
+           Team members can read and/or write if permitted
+
+          404 error --> NOT FOUND  
+
+       Public Repo: 
+         by default everyone has read access
+     only authorise persons can update the code
+    
+        13 = 6 Developers / DE 3 /  
+   create repository and teams for new onboarded projects
+   
+Project: Create an organisation in github
+         Create 3 teams for three projects 
+          BOA / RBC / Barclays()
+        Create repositories for each  project 
+
+
+Community edition   = CE  
+   free version 
+ENTERPRISE edition  = EE 
+   paid = license 
+
+GitHub - CE = free version 
+   https://github.com
+
+GHE    - EE  = paid version 
+    https://ghe.lss.com
+    https://ghe.aa.com
+    https://ghe.rbc.com
+    https://ghe.boa.com
+
+Git Installations
+-----------------
+Pre Requisite Software Download/ Registration :
+  
+  Install git bash @ https://git-scm.com/downloads
+
+==========================
+Installation 
+  Windows OS: 
+    git bash 
+    git --version 
+     git version 2.35.1.windows.2
+
+  Linux = RedHAT 8 
+   Installation of the GIT PACKAGE IN RedHAT 8 Server
+    sudo yum install git
+      git --version
+
+Developers:
+ Local environment/Server/Computer 
+
+mkdir fintech
+ cd fintech; mkdir boa rbc barclays 
+ cd boa 
+   git init --> initialises the git directory/repository
+     .git  
+
+git config --global user.name "Simon Legah"
+git config --global user.email "legah2000@gmail.com"
+
+git config --global --list
+
+git init          = to initialised a git empty repository
+git status        = to track files location
+git add           = move files to staging area from working area
+git commit -m     = move files to the local repository FROM STAGING AREA
+                    good commit message for tracking changes/authors 
+git log = displays commit iD 
+
+git add . 
+git add fileName 
+git add * 
+
+git commit -m "my first commit"
+git commit -m "boa first app release"
+ -m = message 
+
+        working-area   staging-area   Local-Repo    Remote-Repo  :
+        developement    review
+                        git add       git-commit     git push
+
+         app.java      app.java
+         app.java
+         developement   review         commit         GitHub
+         writing code  
+         local-Computer    LC            LC           
+         file.RED        File.GREEN 
+        git add          git commit      
+
+ git init :
+   mkdir zelle && cd zelle && git init && vi app.java, vi test.java 
+
+   mkdir zelle && cd zelle vi app.java 
+
+
+  https://github.com/lss-zelle/zelle.git 
+
+  git remote add aliasName repoURL
+
+  git remote add az https://github.com/lss-zelle/zelle.git 
+  git remote -v 
+
+       Olu ---> Oluwafemi 
+       Femi ---> Oluwafemi
+
+git push aliasName branchName
+git push az master 
+  Username: landmarktechdevops 
+  password: Grants root access (unlimited persimission)
+  pat: ghp_C7xhqKQ2SF5RxopGhkkjhjhgrLqvVsXl1chI5k
+  pat2: ghp_hf1yWOChvjXFbjyY14lkhgfdsEjOXh54LACzL
+  password / personal access token: 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
+   instead
+  personal access token is like an encrypted password
+  pat restrict what members can do  
+  It defines the scope that a team member or developer can perform 
+
+
+Simon Legah  
+sudo yum install git  ---redhat
+sudo apt install git  --- ubuntu
+
+Fotso 
+https://github.com/lss-zelle/zelle
+
+   git config --global user.name "Landmak Technology"
+   git config --global user.email "legah2000@gmail.com"
+
+
+
+
+
+
+
+
+
+
+
